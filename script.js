@@ -102,8 +102,6 @@ function setDiaInicialCalendario(folgas){
 function apagar(){
     lista.innerHTML = ""
     texto.innerHTML = ""
-    
-
 }
 
 function zeroNaFrente(data){
