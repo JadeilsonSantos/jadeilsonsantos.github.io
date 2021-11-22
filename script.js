@@ -6,7 +6,7 @@ let diasTotalEscala;
 const hoje = new Date();
 const mes = hoje.getMonth()+1;
 const ano = hoje.getFullYear();
-const diaBasediaBase = window.prompt("Digite um 1° dia da escala trabalhado desse mês para tomarmos como base");
+const diaBase= window.prompt("Digite um 1° dia da escala trabalhado desse mês para tomarmos como base");
 const diaBaseInt = parseInt(diaBase) - 1;
 let diaTrabalhoBase = new Date(`${mes}/${diaBaseInt}/${ano}`);
 const umDiaEmMS = 86400000;
