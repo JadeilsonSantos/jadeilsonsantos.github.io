@@ -6,14 +6,13 @@ let diasTotalEscala;
 const hoje = new Date();
 const mes = hoje.getMonth()+1;
 const ano = hoje.getFullYear();
-const diaBase = window.prompt("Digite um 1° dia da escala trabalhado desse mês para tomarmos como base");
+const diaBase;
 const diaBaseInt = parseInt(diaBase) - 1;
 let diaTrabalhoBase = new Date(`${mes}/${diaBaseInt}/${ano} `);
 const umDiaEmMS = 86400000;
 let ndata;
 let diasDeFolga = [];
 let lista = document.querySelector(".lista");
-
 
 diasEscalaTrabalhando.addEventListener("change",e =>{
   diasEscalaTrabalhando = Number(e.target.value)
@@ -37,7 +36,7 @@ function minhaFolga(e){
     alert('Preencha a Escala')
      inputData.value = "";return
     }
-
+diaBase = window.prompt("Digite um 1° dia da escala trabalhado desse mês para tomarmos como base");
   diasTotalEscala = diasEscalaTrabalhando + diasEscalaDeFolga
 
   const dataSelecionada = e.target.value;
