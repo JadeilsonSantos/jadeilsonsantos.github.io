@@ -4,7 +4,7 @@ let diasEscalaTrabalhando = document.querySelector('#diasTrabalhando');
 let diasEscalaDeFolga = document.querySelector('#diasDeFolgas');
 let diasTotalEscala;
 const hoje = new Date();
-const mes = hoje.getMonth();
+const mes = hoje.getMonth()+1;
 const ano = hoje.getFullYear();
 const diaBase = window.prompt("Digite um 1° dia da escala trabalhado desse mês para tomarmos como base");
 let diaTrabalhoBase = new Date(`${mes}/${diaBase}/${ano} `);
