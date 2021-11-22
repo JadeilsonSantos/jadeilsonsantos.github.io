@@ -3,13 +3,16 @@ const inputData = document.querySelector('.container input');
 let diasEscalaTrabalhando = document.querySelector('#diasTrabalhando');
 let diasEscalaDeFolga = document.querySelector('#diasDeFolgas');
 let diasTotalEscala;
-let anoAtual = new Date().getFullYear(); 
-let diaTrabalhoBase = new Date('11/03/2021');
-let hoje = new Date();
+const hoje = new Date();
+const mes = hoje.getMonth();
+const ano = hoje.getFullYear();
+const diaBase = window.prompt("Digite um 1° dia da escala trabalhado desse mês para tomarmos como base");
+let diaTrabalhoBase = new Date(`${mes}/${diaBase}/${ano} `);
 const umDiaEmMS = 86400000;
 let ndata;
 let diasDeFolga = [];
 let lista = document.querySelector(".lista");
+
 
 diasEscalaTrabalhando.addEventListener("change",e =>{
   diasEscalaTrabalhando = Number(e.target.value)
