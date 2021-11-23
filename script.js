@@ -1,5 +1,5 @@
 const texto = document.querySelector('.resultado h3');
-const inputData = document.querySelector('.container input');
+const inputData = document.querySelector('#inputData');
 let diasEscalaTrabalhando = document.querySelector('#diasTrabalhando');
 let diasEscalaDeFolga = document.querySelector('#diasDeFolgas');
 const dataBase = document.querySelector('#dataBase');
@@ -38,11 +38,14 @@ function minhaFolga(e){
    apagar();
    diasDeFolga = [];
 
-  if(inputData.value == "") return
+  if(inputData.value == "") return;
   if(diasEscalaTrabalhando.value == "" || diasEscalaDeFolga.value == ""){
     alert('Preencha a Escala')
      inputData.value = "";return}
-  if (dataBase.value =="") {alert('Escolha a data base'); return;}
+  if (dataBase.value == "") {
+    alert('Escolha a data base');
+    apagar();
+    inputData.value = ""; return}
 
   diasTotalEscala = diasEscalaTrabalhando + diasEscalaDeFolga
 
