@@ -29,7 +29,7 @@ diasEscalaDeFolga.addEventListener("change",e =>{
 
 dataBase.addEventListener("change",e =>{
   let diaBase = e.target.value;
-  let diaBaseR = new Date(diaBase).getDay();
+  let diaBaseR = new Date(diaBase).getDate();
   diaTrabalhoBase = new Date(`${mes}/${diaBaseR}/${ano}`);
   return diaTrabalhoBase;
 })
@@ -39,7 +39,7 @@ function minhaFolga(e){
    diasDeFolga = [];
 
   if(inputData.value == "") return;
-  if(diasEscalaTrabalhando.value == "" || diasEscalaDeFolga.value == ""){
+  if(diasEscalaTrabalhando == "" || diasEscalaDeFolga == ""){
     alert('Preencha a Escala')
      inputData.value = "";return}
   if (dataBase.value == "") {

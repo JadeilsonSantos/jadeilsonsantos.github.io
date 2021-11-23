@@ -94,7 +94,8 @@ font-weight: bold;
   margin-top: 1%;
   color: rgb(252, 5, 108);
   font-weight: bold;
-  
+  font-size: 20px;
+ 
 
 }
 .folgas{
@@ -103,12 +104,14 @@ font-weight: bold;
   align-items: center;
   flex-direction: column;
   font-size: 1.5rem;
+  margin-bottom: 5px;
 }
 .lista{
   display: flex;
   flex-grow: initial;
   flex-wrap: wrap;  
   list-style: none;
+  margin-top: 0px;
   
 }
 .lista li{  
