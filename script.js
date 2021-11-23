@@ -2,13 +2,12 @@ const texto = document.querySelector('.resultado h3');
 const inputData = document.querySelector('.container input');
 let diasEscalaTrabalhando = document.querySelector('#diasTrabalhando');
 let diasEscalaDeFolga = document.querySelector('#diasDeFolgas');
+const dataBase = document.querySelector('#dataBase');
+let diaTrabalhoBase;
 let diasTotalEscala;
 const hoje = new Date();
 const mes = hoje.getMonth()+1;
 const ano = hoje.getFullYear();
-const diaBase= window.prompt("Digite um 1° dia da escala trabalhado desse mês para tomarmos como base");
-const diaBaseInt = parseInt(diaBase) - 1;
-let diaTrabalhoBase = new Date(`${mes}/${diaBaseInt}/${ano}`);
 const umDiaEmMS = 86400000;
 let ndata;
 let diasDeFolga = [];
@@ -28,14 +27,23 @@ diasEscalaDeFolga.addEventListener("change",e =>{
 
 })
 
+dataBase.addEventListener("change",e =>{
+  let diaBase = e.target.value;
+  let diaBaseR = new Date(diaBase).getDay();
+  diaTrabalhoBase = new Date(`${mes}/${diaBaseR}/${ano}`);
+  return diaTrabalhoBase;
+})
+
 function minhaFolga(e){
-  apagar();
-  diasDeFolga = [];
+   apagar();
+   diasDeFolga = [];
+
   if(inputData.value == "") return
   if(diasEscalaTrabalhando.value == "" || diasEscalaDeFolga.value == ""){
     alert('Preencha a Escala')
-     inputData.value = "";return
-    }
+     inputData.value = "";return}
+  if (dataBase.value =="") {alert('Escolha a data base'); return;}
+
   diasTotalEscala = diasEscalaTrabalhando + diasEscalaDeFolga
 
   const dataSelecionada = e.target.value;

@@ -12,17 +12,28 @@
       <h2>Folgo Hoje?</h2>
     </div>
 
-      <div class="container">       
-        <h3>Selecione uma Data</h3>
-        <input type="date" class="inputData" onchange="minhaFolga(event);">
-        <h4>Digite a Escala</h4>
-      </div>
+    <div class="container">
+      <h4>Digite a Escala</h4>
+    </div>
 
-      <div class="container-escala mr-t">
-        <input type="number" id="diasTrabalhando" class="inputEscala mr" >
-       <span>X</span>
-        <input type="number" id="diasDeFolgas" class="inputEscala mr" >
-     </div>
+    <div class="container-escala mr-t">
+      <input type="number" id="diasTrabalhando" class="inputEscala mr" >
+     <span>X</span>
+      <input type="number" id="diasDeFolgas" class="inputEscala mr" >
+   </div>
+
+   <div class="container texto-elemento">
+    <h4>Selecione a data base <br>
+      <h6 style="margin-top:-10px;">(Primeiro dia trabalhado depois da última folga)</h6>
+    </h4>
+    <input type="date" class = "inputData dataBase" id="dataBase" style="margin-top: -10px;" >
+   </div>
+      
+      <div class="container">     
+            <h3>Pesquise uma Data</h3>
+            <input type="date" class="inputData" onchange="minhaFolga(event);">
+       </div>
+        
 
       <div class= "resultado">
         <h3>Resultado</h3>
