@@ -67,7 +67,7 @@ font-weight: bold;
 }
 
 .dataBase{
-  width:15%;
+  width:25%;
   font-size:1rem;
   margin: 0px 20px;
   margin-left: 30px;
@@ -94,7 +94,7 @@ font-weight: bold;
   margin-top: 1%;
   color: rgb(252, 5, 108);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 14px;
   margin: 0;
 }
 
@@ -103,7 +103,7 @@ font-weight: bold;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 5px;
   margin-top: 0px;
 }
