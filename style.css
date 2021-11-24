@@ -37,7 +37,7 @@ font-weight: bold;
 .inputEscala{
   display: flex;
   flex-direction: column;
-  width: 5%;
+  width: 3rem;
   justify-content: center;
   align-items: center;
   font-size: 1.6rem;
@@ -54,7 +54,7 @@ font-weight: bold;
 }
 
 .inputData{
-  width: 20em;
+  width: 40rem;
   padding: 5px;
   border-radius: 5px;
   font-size: 1.6rem;
@@ -67,7 +67,7 @@ font-weight: bold;
 }
 
 .dataBase{
-  width:15em;
+  width:20rem;
   font-size:1rem;
   margin: 0px 20px;
   margin-left: 30px;
