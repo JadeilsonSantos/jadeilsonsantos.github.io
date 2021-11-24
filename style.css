@@ -58,11 +58,12 @@ font-weight: bold;
   padding: 5px;
   border-radius: 5px;
   font-size: 1.6rem;
-  text-align: center;
+  text-align:center;
   background-color: rgb(243, 129, 218);
   color: rgb(255, 255, 255);
   border-width: 1px;
   border-bottom: 5px solid rgb(252, 5, 108);
+  justify-content: center;
 
 }
 
@@ -73,6 +74,7 @@ font-weight: bold;
   margin-left: 30px;
   margin-top: -10px;
   text-align: center;
+  justify-content: center;
   
 }
 .inLine{
