@@ -54,7 +54,7 @@ font-weight: bold;
 }
 
 .inputData{
-  width: 40rem;
+  width: 20rem;
   padding: 5px;
   border-radius: 5px;
   font-size: 1.6rem;
@@ -67,7 +67,7 @@ font-weight: bold;
 }
 
 .dataBase{
-  width:20rem;
+  width:10rem;
   font-size:1rem;
   margin: 0px 20px;
   margin-left: 30px;
