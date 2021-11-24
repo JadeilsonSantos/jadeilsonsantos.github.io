@@ -39,7 +39,7 @@ function minhaFolga(e){
    diasDeFolga = [];
 
   if(inputData.value == "") return;
-  if(diasEscalaTrabalhando == "" || diasEscalaDeFolga == ""){
+  if(typeof(diasEscalaTrabalhando) != 'number' || typeof(diasEscalaDeFolga) != 'number'){
     alert('Preencha a Escala')
      inputData.value = "";return}
   if (dataBase.value == "") {
