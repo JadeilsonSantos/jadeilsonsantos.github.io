@@ -46,6 +46,10 @@ function minhaFolga(e){
     alert('Escolha a data base');
     apagar();
     inputData.value = ""; return}
+  if (inputData.value < dataBase.value){
+    alert('A data base precisa ser menor que a data pesquisada');
+    inputData.value = "";
+    return}  
 
   diasTotalEscala = diasEscalaTrabalhando + diasEscalaDeFolga
 
