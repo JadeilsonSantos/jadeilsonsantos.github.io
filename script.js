@@ -31,7 +31,10 @@ dataBase.addEventListener("change",e =>{
   let diaBase = e.target.value;
   let diaBaseR = new Date(diaBase).getDate();
   diaTrabalhoBase = new Date(`${mes}/${diaBaseR}/${ano}`);
+  inputData.value = "";
+  apagar()
   return diaTrabalhoBase;
+
 })
 
 function minhaFolga(e){
