@@ -30,7 +30,9 @@ diasEscalaDeFolga.addEventListener("change",e =>{
 dataBase.addEventListener("change",e =>{
   let diaBase = e.target.value;
   let diaBaseR = new Date(diaBase).getDate();
-  diaTrabalhoBase = new Date(`${mes}/${diaBaseR}/${ano}`);
+  let mesBaseR = new Date(diaBase).getMonth()+1;
+  let anoBaseR = new Date(diaBase).getFullYear();
+  diaTrabalhoBase = new Date(`${mesBaseR}/${diaBaseR}/${anoBaseR}`);
   inputData.value = "";
   apagar()
   return diaTrabalhoBase;
